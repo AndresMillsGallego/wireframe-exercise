@@ -16,13 +16,10 @@ nav {
 }
 
 ul {
+  width: 760px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-}
-
-li {
-  margin-left: 100px;
 }
 
 main {
@@ -32,6 +29,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 30px auto;
+  margin-bottom: 0;
 }
 
 main img {
@@ -54,16 +52,25 @@ p {
 
 footer {
   height: 70px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 0 30px 30px;
   background-color: grey;
 }
 
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
 article a {
   border: solid 1px;
+  border-radius: .5rem;
   background-color:lightgrey;
   padding: 5px;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  transition: all 1s;
+}
+article a:hover {
+  background-color:navy;
+  color: yellow;
+  padding: .75rem 6rem;
 }
